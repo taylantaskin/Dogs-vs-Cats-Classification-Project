@@ -12,9 +12,8 @@ The project was executed in a high-performance environment to ensure fast traini
 * **Hardware:** A **GPU** (`/physical_device:GPU:0`) was detected and utilized for accelerated training.
 
 ### 1.2 Dataset Overview
-### 📊 Class Distribution
-
 ![Dogs vs Cats Distribution](Distribution.jpg)
+
 The project uses the **Kaggle Dogs vs Cats dataset**. We verified the files and checked the class distribution:
 
 * **Total Training Images:** **25,000**
