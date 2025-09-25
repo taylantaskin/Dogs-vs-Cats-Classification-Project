@@ -1,52 +1,34 @@
-# CNN Image Classification Project
+# 🚀 Part 1: Project Setup and Data Preparation
 
-## Project Overview
-This project is a deep learning image classification project using a **Convolutional Neural Network (CNN)**. The main goal is to classify images from a selected dataset and practice preprocessing, model training, evaluation, and hyperparameter tuning.
+---
 
-## Dataset
-We used the **Dogs vs. Cats** dataset from Kaggle. The dataset has:
-- **Training images:** 25,000
-- **Validation images:** 5,000
-- **Classes:** Dogs and Cats
-https://www.kaggle.com/c/dogs-vs-cats
-## Data Preprocessing
-- Images were resized to **128x128 pixels**.
-- Images were **normalized** (scaled to 0-1 range).
-- Data augmentation was applied to improve model performance:
-  - Rotation
-  - Horizontal flip
-  - Zoom
-  - Brightness changes
-- Train-validation split was applied to prepare the model for evaluation.
+This section summarizes the environment setup, the dataset details, and the steps taken for detailed image preprocessing before training the model.
 
-## Model Architecture
-The CNN model includes:
-- **Convolutional layers** with ReLU activation
-- **MaxPooling layers**
-- **Dropout layers** to prevent overfitting
-- **Dense (fully connected) layers**  
-  - Dense layer size: **128 units**
-- **Output layer** with sigmoid activation (binary classification)
+### 1. Environment and Setup
 
-## Training
-- Hyperparameters were optimized for:
-  - Dropout rate
-  - Dense layer size
-  - Learning rate
-  - Batch size
-  - Optimizer
-- Early stopping and learning rate reduction were used to avoid overfitting.
-- Training was done in **short epochs** for quick testing, then extended for best configuration.
+The project was executed in a high-performance environment to ensure fast training:
 
-## Results
-- Best validation accuracy achieved: **96.56%**
-- The model showed good fit without severe overfitting.
-- Hyperparameter optimization helped identify the most effective configuration.
+* **Deep Learning Framework:** TensorFlow version **2.18.0**
+* **Hardware:** A **GPU** (`/physical_device:GPU:0`) was detected and utilized for accelerated training.
 
-## Recommendations
-- Use the best configuration (higher dropout, dense 128 units) for final training.
-- Consider using **more epochs** and early stopping for final model.
-- Data augmentation and regularization improve performance.
+### 2. Dataset Overview
 
-## Kaggle Notebook
-](https://www.kaggle.com/code/taylantakn/dogs-vs-cats-classification-project?scriptVersionId=264017772)
+The project uses the **Kaggle Dogs vs Cats dataset**. We verified the files and checked the class distribution:
+
+* **Total Training Images:** **25,000**
+* **Test Images:** **12,500**
+* **Class Balance:** The training set is perfectly balanced: **12,500 Dogs (50.0%)** and **12,500 Cats (50.0%)**.
+
+### 3. Data Preprocessing Details
+
+The images were processed to prepare them for the Convolutional Neural Network (CNN):
+
+* **Resizing:** All images were resized to a fixed size of **128x128** pixels.
+* **Batch Size:** Images are fed to the model in batches of **32**.
+* **Data Split:** The 25,000 training images were split into three sets:
+    * **Training Set:** **15,000** images
+    * **Validation Set:** **5,000** images
+    * **Test Set:** **5,000** images
+* **Data Augmentation:** To make the model more robust and prevent overfitting, random transformations (including **rotation, shifting, zooming, and flipping**) were applied **only to the training set**.
+
+---
