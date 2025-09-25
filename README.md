@@ -12,7 +12,7 @@ The project was executed in a high-performance environment to ensure fast traini
 * **Hardware:** A **GPU** (`/physical_device:GPU:0`) was detected and utilized for accelerated training.
 
 ### 1.2 Dataset Overview
-![Dogs vs Cats Distribution](images/Distribution.jpg)
+![Dogs vs Cats Distribution](images/Distribution.png)
 
 The project uses the **Kaggle Dogs vs Cats dataset**. We verified the files and checked the class distribution:
 
@@ -35,6 +35,7 @@ The images were processed to prepare them for the Convolutional Neural Network (
     * **Validation Set:** **5,000** images
     * **Test Set:** **5,000** images
 * **Data Augmentation:** To make the model more robust and prevent overfitting, random transformations (including **rotation, shifting, zooming, and flipping**) were applied **only to the training set**.
+
 
 ---
 
