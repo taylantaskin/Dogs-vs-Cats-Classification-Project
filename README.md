@@ -8,7 +8,7 @@ We used the **Dogs vs. Cats** dataset from Kaggle. The dataset has:
 - **Training images:** 25,000
 - **Validation images:** 5,000
 - **Classes:** Dogs and Cats
-
+https://www.kaggle.com/c/dogs-vs-cats
 ## Data Preprocessing
 - Images were resized to **128x128 pixels**.
 - Images were **normalized** (scaled to 0-1 range).
@@ -49,5 +49,4 @@ The CNN model includes:
 - Data augmentation and regularization improve performance.
 
 ## Kaggle Notebook
-[[Link to Kaggle Notebook](#)
 ](https://www.kaggle.com/code/taylantakn/dogs-vs-cats-classification-project?scriptVersionId=264017772)
