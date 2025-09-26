@@ -35,6 +35,8 @@ The images were processed to prepare them for the Convolutional Neural Network (
     * **Validation Set:** **5,000** images
     * **Test Set:** **5,000** images
 * **Data Augmentation:** To make the model more robust and prevent overfitting, random transformations (including **rotation, shifting, zooming, and flipping**) were applied **only to the training set**.
+![Preprocessed Images with Correct Labels](images/Preprocessed_Images_with_Correct_Labels.png)
+
 
 
 ---
